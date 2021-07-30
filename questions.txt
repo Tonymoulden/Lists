@@ -1,26 +1,28 @@
-name:
+name: Tony Moulden
 date:
 
 1 - What is a List?
-
+ Lists are used to store multiple items in a single variable.
 
 2 - How can you create an empty list? What about a pre-populated list?
-
+Lists in Python can be created by just placing the sequence inside the square brackets [] .
+To declare an empty list just assign a variable (like a space) with square brackets.
 
 3 - How do you access a list?
-
+Python has a built-in list type named "list". List literals are written within square brackets [ ].
+Lists work similarly to strings
 
 4 - How do you add items to a list? Remove items?
-
+.append, .remove
 
 5 - What happens if you got out of bounds with a list?
-
+error
 
 6 - Why are lists useful to us, as opposed to strings?
-
+you can add individual characters and more manipulation overall can be done
 
 7 - Where a position in a string represents a character, a position in a list represents a ______?
-
+an item
 
 8 - Which of the methods for lists return a value? Which methods for lists operate on the list (change it)?
 Documentation: https://www.w3schools.com/python/python_lists_methods.asp

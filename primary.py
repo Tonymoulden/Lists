@@ -1,5 +1,5 @@
-# name:
-# author:
+# name: Tony Moulden
+# date: 07/27/2021
 
 # -------------------- Section 1 ------------------------- #
 # ------------------ List Creation ----------------------- #
@@ -34,6 +34,16 @@ print('\n' 'Creating a Pre-Populated List' '\n')
 #
 # WRITE CODE BELOW
 integers = [1, 15, -4, -26, 34]
+print(integers)
+floats = [1.5, 15.5, -4.5, -26.5, 34.5]
+print(floats)
+boolean = [10 > 9, 9 < 10, 10 == 9]
+animals = ['hippo', 'cheetah', 'lion']
+print(animals)
+objects = ['candle', 'lights', 'car']
+print(objects)
+print('lynx')
+
 
 
 # -------------------- Section 2 ------------------------- #
@@ -55,6 +65,15 @@ print('Accessing and Modifying a List' '\n')
 #
 # WRITE CODE BELOW
 integers[2] = 44
+print(integers)
+floats[4] = 22.2
+print(floats)
+boolean[0] = 10 != 9
+print(boolean)
+animals[2] = 'Lion'
+print(animals)
+objects[1] = 'house'
+print(objects)
 
 
 print('\n' 'Append, Insert, and Remove' '\n')
@@ -73,8 +92,15 @@ print('\n' 'Append, Insert, and Remove' '\n')
 #
 # WRITE CODE BELOW
 integers.append(25)
-
-
+print(integers)
+floats.append(55.3)
+print(floats)
+boolean.remove(0)
+print(boolean)
+animals.insert(0, 'Frog')
+print(animals)
+objects.insert(2, 'bike')
+print(objects)
 print('\n' 'List Concatenation' '\n')
 # 3. List Concatenation
 # ------------------------------------------------------------
@@ -99,7 +125,10 @@ print(
     f'example_duplication | {example_duplication}' '\n'
 )
 
-
+concatenation = [integers + floats]
+print(concatenation)
+duplication = animals * 3
+print(duplication)
 # -------------------- Section 3 ------------------------- #
 # --------------------- Looping -------------------------- #
 print('\n' '# -------------------- Section 3 ------------------------- #')
@@ -143,7 +172,8 @@ size = 5
 rolls = []
 
 for i in range(size):
-    pass  # finish the loop
+    pass
+    rolls.append(randint(1, 6))
 
 print(f'rolls | {rolls}')
 print(f'1\t| total - {rolls.count(1)}\t\t| rate of appearance - {"{:.2%}".format(rolls.count(1) / size)}')
